@@ -2,12 +2,16 @@
 $(call inherit-product, vendor/lmodroid/config/common.mk)
 
 # Include AOSP audio files
-include vendor/lmodroid/config/aosp_audio.mk
+include vendor/lmodroid/config/custom_audio.mk
+
+# Include Lineage audio files
+include vendor/lmodroid/config/lmodroid_audio.mk
 
 # Default notification/alarm sounds
+# Use Material product sounds by default
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.config.notification_sound?=Argon.ogg \
-    ro.config.alarm_alert?=Hassium.ogg
+    ro.config.alarm_alert=material_gentle.ogg \
+    ro.config.notification_sound=material_simple_1.ogg
 
 # Apps
 ifeq ($(PRODUCT_TYPE), go)

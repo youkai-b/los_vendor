@@ -2,9 +2,9 @@
 # LMODroid Audio Files
 #
 
-ALARM_PATH := vendor/lmodroid/prebuilt/common/media/audio/alarms
-NOTIFICATION_PATH := vendor/lmodroid/prebuilt/common/media/audio/notifications
-RINGTONE_PATH := vendor/lmodroid/prebuilt/common/media/audio/ringtones
+ALARM_PATH := vendor/lmodroid/prebuilt/common/media/audio/lineageos/alarms
+NOTIFICATION_PATH := vendor/lmodroid/prebuilt/common/media/audio/lineageos/notifications
+RINGTONE_PATH := vendor/lmodroid/prebuilt/common/media/audio/lineageos/ringtones
 
 # Alarms
 PRODUCT_COPY_FILES += \
