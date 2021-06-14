@@ -110,9 +110,6 @@ ifneq ($(TARGET_DISABLE_LINEAGE_SDK), true)
 include vendor/lineage/config/lineage_sdk_common.mk
 endif
 
-# Do not include art debug targets
-PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
-
 # ANGLE
 PRODUCT_COPY_FILES += \
     vendor/lineage/prebuilt/common/etc/permissions/product-privapp-permissions-aosp.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/product-privapp-permissions-aosp.xml
@@ -279,6 +276,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/crowdin/overlay
 PRODUCT_EXTRA_RECOVERY_KEYS += \
     vendor/lineage/build/target/product/security/lineage
 
+include vendor/lineage/config/art.mk
 include vendor/lineage/config/version.mk
 
 -include vendor/lineage-priv/keys/keys.mk
