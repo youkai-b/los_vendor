@@ -17,9 +17,9 @@ PRODUCT_PACKAGES += \
     Stk
 
 # Default ringtone
-# Use Material product sounds by default
+# Use Surface Duo 2 product sounds by default
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.config.ringtone=material_minimal.ogg
+    ro.config.ringtone=surface_shimmer.ogg
 
 # Tethering - allow without requiring a provisioning app
 # (for devices that check this)

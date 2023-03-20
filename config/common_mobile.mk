@@ -8,10 +8,10 @@ include vendor/lineage/config/custom_audio.mk
 include vendor/lineage/config/lineage_audio.mk
 
 # Default notification/alarm sounds
-# Use Material product sounds by default
+# Use Surface Duo 2 product sounds by default
 PRODUCT_PRODUCT_PROPERTIES += \
-    ro.config.alarm_alert=material_gentle.ogg \
-    ro.config.notification_sound=material_simple_1.ogg
+    ro.config.alarm_alert=surface_boost.ogg \
+    ro.config.notification_sound=surface_glimpse.ogg \
 
 # Apps
 PRODUCT_PACKAGES += \
