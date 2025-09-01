@@ -84,6 +84,9 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.sys.max_profiles?=16 \
     fw.max_users=32
 
+# Include LMODroid audio files
+include vendor/lmodroid/config/lmodroid_audio.mk
+
 # Do not include art debug targets
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 
